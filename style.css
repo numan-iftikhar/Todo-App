@@ -1,0 +1,102 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #d0e4f7; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-task {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  width: 350px;
+}
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  flex: 1;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-add {
+  font-size: 1.2rem;
+  margin-left: 5px;
+  border: 1px solid green;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: green;
+  transition: 0.3s;
+  float: right;
+}
+.btn-add:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.task {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #66aae5;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.btn-delete,
+.btn-check,
+.btn-edit {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.btn-delete {
+  background-color: rgb(228, 14, 14);
+}
+.btn-check {
+  background-color: #169606;
+}
+.btn-edit {
+  background-color: orange;
+}
